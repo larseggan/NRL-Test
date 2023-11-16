@@ -1,6 +1,8 @@
 # Testprosjekt for NRL API (Nasjonalt register over luftfartshindre)
 
 ## Autentisering
+Kontakt kartverket for testbruker
+
 Finn autoriserings token her:
 [https://nrl-test.kartverket.no/token/](https://nrl-test.kartverket.no/token/)
 
