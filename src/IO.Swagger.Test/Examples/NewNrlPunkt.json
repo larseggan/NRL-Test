@@ -1,0 +1,29 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      11,
+      78,
+      0
+    ]
+  },
+  "properties": {
+    "featureType": "NrlPunkt",
+    "status": "planlagtOppført",
+    "komponentident": "67b4da6f-cbda-498b-aab2-eb29fe2e1885",
+    "navn": "Lars1",
+    "vertikalAvstand": 19,
+    "luftfartshinderlyssetting": "fastRødt",
+    "datafangstdato": "2017-06-01",
+    "kvalitet": {
+      "datafangstmetode": "lan",
+      "nøyaktighet": 200,
+      "datafangstmetodeHøyde": "lan",
+      "nøyaktighetHøyde": 200
+    },
+    "punktType": "annet",
+    "verifisertRapporteringsnøyaktighet": "0",
+    "høydereferanse": "fot"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:5942"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.886119444444,
+          78.908375,
+          454.600727386182
+        ]
+      },
+      "properties": {
+        "featureType": "NrlMast",
+        "status": "eksisterende",
+        "komponentident": "0d2d4b36-8037-42fa-8f98-4ffe3e864d9e",
+        "navn": "54334",
+        "vertikalAvstand": 10,
+        "datafangstdato": "2001-02-14",
+        "kvalitet": {
+          "datafangstmetode": "dig",
+          "nøyaktighet": 2500,
+          "datafangstmetodeHøyde": "sat",
+          "nøyaktighetHøyde": 2500
+        },
+        "mastType": "taubanemast",
+        "verifisertRapporteringsnøyaktighet": "0",
+        "høydereferanse": "fot",
+        "nrlLuftspenn": [
+          "f2428049-b73a-4586-acf5-a1c1008ca17d"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.889963888889,
+          78.915369444444,
+          90.592882344857
+        ]
+      },
+      "properties": {
+        "featureType": "NrlMast",
+        "status": "eksisterende",
+        "komponentident": "3fa0b0fa-00b7-4d2f-b351-24522f36100a",
+        "navn": "54334",
+        "vertikalAvstand": 2,
+        "datafangstdato": "2001-02-14",
+        "kvalitet": {
+          "datafangstmetode": "dig",
+          "nøyaktighet": 2500,
+          "datafangstmetodeHøyde": "sat",
+          "nøyaktighetHøyde": 2500
+        },
+        "mastType": "taubanemast",
+        "verifisertRapporteringsnøyaktighet": "0",
+        "høydereferanse": "fot",
+        "nrlLuftspenn": [
+          "f2428049-b73a-4586-acf5-a1c1008ca17d"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.889963888889,
+            78.915369444444,
+            92.592882344857
+          ],
+          [
+            11.886119444444,
+            78.908375,
+            464.600727386182
+          ]
+        ]
+      },
+      "properties": {
+        "featureType": "NrlLuftspenn",
+        "status": "eksisterende",
+        "komponentident": "f2428049-b73a-4586-acf5-a1c1008ca17d",
+        "navn": "54334",
+        "vertikalAvstand": 43,
+        "datafangstdato": "2001-02-14",
+        "kvalitet": {
+          "datafangstmetode": "dig",
+          "nøyaktighet": 2500,
+          "datafangstmetodeHøyde": "sat",
+          "nøyaktighetHøyde": 2500
+        },
+        "luftspennType": "taubane",
+        "verifisertRapporteringsnøyaktighet": "0",
+        "høydereferanse": "topp",
+        "nrlMast": [
+          "0d2d4b36-8037-42fa-8f98-4ffe3e864d9e",
+          "3fa0b0fa-00b7-4d2f-b351-24522f36100a"
+        ]
+      }
+    }
+  ]
+}

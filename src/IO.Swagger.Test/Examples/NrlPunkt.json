@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.854748129975,
+          78.943368973458
+        ]
+      },
+      "properties": {
+        "featureType": "NrlPunkt",
+        "status": "eksisterende", // planlagtOppført
+        "komponentident": "d692c8f5-a38a-4531-a759-43a824ee5b36", // ny id her
+        "navn": "Lars1", //"VLBI2",
+        "vertikalAvstand": 19,
+        "luftfartshinderlyssetting": "fastRødt",
+        "datafangstdato": "2017-06-01",
+        "kvalitet": {
+          "datafangstmetode": "lan",
+          "nøyaktighet": 200,
+          "datafangstmetodeHøyde": "lan",
+          "nøyaktighetHøyde": 200
+        },
+        "punktType": "annet",
+        "verifisertRapporteringsnøyaktighet": "0",
+        "høydereferanse": "fot"
+      }
+    }
+  ]
+}
