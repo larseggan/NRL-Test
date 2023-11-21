@@ -1,5 +1,10 @@
 # Testprosjekt for NRL API (Nasjonalt register over luftfartshindre)
 
+## Change log:
+- Rettet opp endepunkt for kodelister som nå bruker kodeverdier
+- eierId leses nå fra config-fil.
+
+
 ## Autentisering
 Kontakt kartverket for testbruker
 
