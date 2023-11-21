@@ -20,7 +20,7 @@ namespace IO.Swagger.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-        public interface INrlRapporteringApi : IApiAccessor
+    public interface INrlRapporteringApi : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
@@ -33,7 +33,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>FeatureCollection</returns>
-        FeatureCollection Features (FeatureCollection body, Guid? eierId);
+        FeatureCollection Features(FeatureCollection body, Guid? eierId);
 
         /// <summary>
         /// Oppdater objekter med nullstilte verdier.
@@ -45,7 +45,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>ApiResponse of FeatureCollection</returns>
-        ApiResponse<FeatureCollection> FeaturesWithHttpInfo (FeatureCollection body, Guid? eierId);
+        ApiResponse<FeatureCollection> FeaturesWithHttpInfo(FeatureCollection body, Guid? eierId);
         /// <summary>
         /// Oppdater eller meld inn nye objekter.
         /// </summary>
@@ -56,7 +56,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>FeatureCollection</returns>
-        FeatureCollection Features1 (FeatureCollection body, Guid? eierId);
+        FeatureCollection Features1(FeatureCollection body, Guid? eierId);
 
         /// <summary>
         /// Oppdater eller meld inn nye objekter.
@@ -68,7 +68,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>ApiResponse of FeatureCollection</returns>
-        ApiResponse<FeatureCollection> Features1WithHttpInfo (FeatureCollection body, Guid? eierId);
+        ApiResponse<FeatureCollection> Features1WithHttpInfo(FeatureCollection body, Guid? eierId);
         /// <summary>
         /// Hent hindre som features
         /// </summary>
@@ -82,7 +82,7 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>FeatureCollection</returns>
-        FeatureCollection Features2 (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
+        FeatureCollection Features2(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
 
         /// <summary>
         /// Hent hindre som features
@@ -97,7 +97,7 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>ApiResponse of FeatureCollection</returns>
-        ApiResponse<FeatureCollection> Features2WithHttpInfo (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
+        ApiResponse<FeatureCollection> Features2WithHttpInfo(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -110,7 +110,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of FeatureCollection</returns>
-        System.Threading.Tasks.Task<FeatureCollection> FeaturesAsync (FeatureCollection body, Guid? eierId);
+        System.Threading.Tasks.Task<FeatureCollection> FeaturesAsync(FeatureCollection body, Guid? eierId);
 
         /// <summary>
         /// Oppdater objekter med nullstilte verdier.
@@ -122,7 +122,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of ApiResponse (FeatureCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> FeaturesAsyncWithHttpInfo (FeatureCollection body, Guid? eierId);
+        System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> FeaturesAsyncWithHttpInfo(FeatureCollection body, Guid? eierId);
         /// <summary>
         /// Oppdater eller meld inn nye objekter.
         /// </summary>
@@ -133,7 +133,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of FeatureCollection</returns>
-        System.Threading.Tasks.Task<FeatureCollection> Features1Async (FeatureCollection body, Guid? eierId);
+        System.Threading.Tasks.Task<FeatureCollection> Features1Async(FeatureCollection body, Guid? eierId);
 
         /// <summary>
         /// Oppdater eller meld inn nye objekter.
@@ -145,7 +145,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of ApiResponse (FeatureCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features1AsyncWithHttpInfo (FeatureCollection body, Guid? eierId);
+        System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features1AsyncWithHttpInfo(FeatureCollection body, Guid? eierId);
         /// <summary>
         /// Hent hindre som features
         /// </summary>
@@ -159,7 +159,7 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>Task of FeatureCollection</returns>
-        System.Threading.Tasks.Task<FeatureCollection> Features2Async (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
+        System.Threading.Tasks.Task<FeatureCollection> Features2Async(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
 
         /// <summary>
         /// Hent hindre som features
@@ -174,14 +174,14 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>Task of ApiResponse (FeatureCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features2AsyncWithHttpInfo (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
+        System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features2AsyncWithHttpInfo(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null);
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-        public partial class NrlRapporteringApi : INrlRapporteringApi
+    public partial class NrlRapporteringApi : INrlRapporteringApi
     {
         private IO.Swagger.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
@@ -246,7 +246,7 @@ namespace IO.Swagger.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public IO.Swagger.Client.Configuration Configuration {get; set;}
+        public IO.Swagger.Client.Configuration Configuration { get; set; }
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
@@ -293,10 +293,10 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>FeatureCollection</returns>
-        public FeatureCollection Features (FeatureCollection body, Guid? eierId)
+        public FeatureCollection Features(FeatureCollection body, Guid? eierId)
         {
-             ApiResponse<FeatureCollection> localVarResponse = FeaturesWithHttpInfo(body, eierId);
-             return localVarResponse.Data;
+            ApiResponse<FeatureCollection> localVarResponse = FeaturesWithHttpInfo(body, eierId);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -306,7 +306,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>ApiResponse of FeatureCollection</returns>
-        public ApiResponse< FeatureCollection > FeaturesWithHttpInfo (FeatureCollection body, Guid? eierId)
+        public ApiResponse<FeatureCollection> FeaturesWithHttpInfo(FeatureCollection body, Guid? eierId)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -353,11 +353,11 @@ namespace IO.Swagger.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)this.Configuration.ApiClient.CallApi(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -367,7 +367,7 @@ namespace IO.Swagger.Api
 
             return new ApiResponse<FeatureCollection>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FeatureCollection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
+                (FeatureCollection)this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
         }
 
         /// <summary>
@@ -377,10 +377,10 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of FeatureCollection</returns>
-        public async System.Threading.Tasks.Task<FeatureCollection> FeaturesAsync (FeatureCollection body, Guid? eierId)
+        public async System.Threading.Tasks.Task<FeatureCollection> FeaturesAsync(FeatureCollection body, Guid? eierId)
         {
-             ApiResponse<FeatureCollection> localVarResponse = await FeaturesAsyncWithHttpInfo(body, eierId);
-             return localVarResponse.Data;
+            ApiResponse<FeatureCollection> localVarResponse = await FeaturesAsyncWithHttpInfo(body, eierId);
+            return localVarResponse.Data;
 
         }
 
@@ -391,7 +391,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of ApiResponse (FeatureCollection)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> FeaturesAsyncWithHttpInfo (FeatureCollection body, Guid? eierId)
+        public async System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> FeaturesAsyncWithHttpInfo(FeatureCollection body, Guid? eierId)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -438,11 +438,11 @@ namespace IO.Swagger.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await this.Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -452,7 +452,7 @@ namespace IO.Swagger.Api
 
             return new ApiResponse<FeatureCollection>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FeatureCollection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
+                (FeatureCollection)this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
         }
 
         /// <summary>
@@ -462,10 +462,22 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>FeatureCollection</returns>
-        public FeatureCollection Features1 (FeatureCollection body, Guid? eierId)
+        public FeatureCollection Features1(FeatureCollection body, Guid? eierId)
         {
-             ApiResponse<FeatureCollection> localVarResponse = Features1WithHttpInfo(body, eierId);
-             return localVarResponse.Data;
+            Guid? eierIdGuid;
+            if (eierId == null)
+            {
+                var eierIdString = this.Configuration.GetApiKeyWithPrefix("eierId");
+                eierIdGuid = new Guid(eierIdString);
+            }
+            else
+            {
+                eierIdGuid = eierId;
+            }
+
+            ApiResponse<FeatureCollection> localVarResponse = Features1WithHttpInfo(body, eierIdGuid);
+            //ApiResponse<FeatureCollection> localVarResponse = Features1WithHttpInfo(body, eierId);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -475,7 +487,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>ApiResponse of FeatureCollection</returns>
-        public ApiResponse< FeatureCollection > Features1WithHttpInfo (FeatureCollection body, Guid? eierId)
+        public ApiResponse<FeatureCollection> Features1WithHttpInfo(FeatureCollection body, Guid? eierId)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -522,11 +534,11 @@ namespace IO.Swagger.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)this.Configuration.ApiClient.CallApi(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -536,7 +548,7 @@ namespace IO.Swagger.Api
 
             return new ApiResponse<FeatureCollection>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FeatureCollection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
+                (FeatureCollection)this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
         }
 
         /// <summary>
@@ -546,10 +558,10 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of FeatureCollection</returns>
-        public async System.Threading.Tasks.Task<FeatureCollection> Features1Async (FeatureCollection body, Guid? eierId)
+        public async System.Threading.Tasks.Task<FeatureCollection> Features1Async(FeatureCollection body, Guid? eierId)
         {
-             ApiResponse<FeatureCollection> localVarResponse = await Features1AsyncWithHttpInfo(body, eierId);
-             return localVarResponse.Data;
+            ApiResponse<FeatureCollection> localVarResponse = await Features1AsyncWithHttpInfo(body, eierId);
+            return localVarResponse.Data;
 
         }
 
@@ -560,7 +572,7 @@ namespace IO.Swagger.Api
         /// <param name="body"></param>
         /// <param name="eierId"></param>
         /// <returns>Task of ApiResponse (FeatureCollection)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features1AsyncWithHttpInfo (FeatureCollection body, Guid? eierId)
+        public async System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features1AsyncWithHttpInfo(FeatureCollection body, Guid? eierId)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -607,11 +619,11 @@ namespace IO.Swagger.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await this.Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -621,7 +633,7 @@ namespace IO.Swagger.Api
 
             return new ApiResponse<FeatureCollection>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FeatureCollection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
+                (FeatureCollection)this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
         }
 
         /// <summary>
@@ -634,10 +646,22 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>FeatureCollection</returns>
-        public FeatureCollection Features2 (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
+        public FeatureCollection Features2(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
         {
-             ApiResponse<FeatureCollection> localVarResponse = Features2WithHttpInfo(eierId, CRS, objekttype, id, bbox);
-             return localVarResponse.Data;
+            Guid? eierIdGuid;
+            if (eierId == null)
+            {
+                var eierIdString = this.Configuration.GetApiKeyWithPrefix("eierId");
+                eierIdGuid = new Guid(eierIdString);
+            }
+            else
+            {
+                eierIdGuid = eierId;
+            }
+
+            ApiResponse<FeatureCollection> localVarResponse = Features2WithHttpInfo(eierIdGuid, CRS, objekttype, id, bbox);
+            //ApiResponse<FeatureCollection> localVarResponse = Features2WithHttpInfo(eierId, CRS, objekttype, id, bbox);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -650,7 +674,7 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>ApiResponse of FeatureCollection</returns>
-        public ApiResponse< FeatureCollection > Features2WithHttpInfo (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
+        public ApiResponse<FeatureCollection> Features2WithHttpInfo(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
         {
             // verify the required parameter 'eierId' is set
             if (eierId == null)
@@ -692,11 +716,11 @@ namespace IO.Swagger.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)this.Configuration.ApiClient.CallApi(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -706,7 +730,7 @@ namespace IO.Swagger.Api
 
             return new ApiResponse<FeatureCollection>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FeatureCollection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
+                (FeatureCollection)this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
         }
 
         /// <summary>
@@ -719,10 +743,10 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>Task of FeatureCollection</returns>
-        public async System.Threading.Tasks.Task<FeatureCollection> Features2Async (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
+        public async System.Threading.Tasks.Task<FeatureCollection> Features2Async(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
         {
-             ApiResponse<FeatureCollection> localVarResponse = await Features2AsyncWithHttpInfo(eierId, CRS, objekttype, id, bbox);
-             return localVarResponse.Data;
+            ApiResponse<FeatureCollection> localVarResponse = await Features2AsyncWithHttpInfo(eierId, CRS, objekttype, id, bbox);
+            return localVarResponse.Data;
 
         }
 
@@ -736,7 +760,7 @@ namespace IO.Swagger.Api
         /// <param name="id">Hente ett spesifikt hinder med oppgitt komponentident. (optional)</param>
         /// <param name="bbox">Bounding box, eksempelvis: &#x27;EPSG:4326 10.10 59.90, 10.62 60.28&#x27; (optional)</param>
         /// <returns>Task of ApiResponse (FeatureCollection)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features2AsyncWithHttpInfo (Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
+        public async System.Threading.Tasks.Task<ApiResponse<FeatureCollection>> Features2AsyncWithHttpInfo(Guid? eierId, string CRS, string objekttype = null, Guid? id = null, string bbox = null)
         {
             // verify the required parameter 'eierId' is set
             if (eierId == null)
@@ -778,11 +802,11 @@ namespace IO.Swagger.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await this.Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -792,7 +816,7 @@ namespace IO.Swagger.Api
 
             return new ApiResponse<FeatureCollection>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FeatureCollection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
+                (FeatureCollection)this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeatureCollection)));
         }
 
     }

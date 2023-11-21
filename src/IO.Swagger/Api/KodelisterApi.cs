@@ -236,7 +236,8 @@ namespace IO.Swagger.Api
         public ApiResponse< KoderDTO > AllWithHttpInfo ()
         {
 
-            var localVarPath = "/api/ekstern/koder/";
+            //20231121-leg: Kartverket has changed endpoints from koder to kodeverdier
+            var localVarPath = "/api/ekstern/kodeverdier"; //var localVarPath = "/api/ekstern/koder/";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -306,7 +307,7 @@ namespace IO.Swagger.Api
         public async System.Threading.Tasks.Task<ApiResponse<KoderDTO>> AllAsyncWithHttpInfo ()
         {
 
-            var localVarPath = "/api/ekstern/koder/";
+            var localVarPath = "/api/ekstern/kodeverdier/";  //var localVarPath = "/api/ekstern/koder/";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -375,7 +376,7 @@ namespace IO.Swagger.Api
             if (kodelistenavn == null)
                 throw new ApiException(400, "Missing required parameter 'kodelistenavn' when calling KodelisterApi->HentKodeListe");
 
-            var localVarPath = "/api/ekstern/koder/{kodelistenavn}";
+            var localVarPath = "/api/ekstern/kodeverdier/{kodelistenavn}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -446,7 +447,7 @@ namespace IO.Swagger.Api
             if (kodelistenavn == null)
                 throw new ApiException(400, "Missing required parameter 'kodelistenavn' when calling KodelisterApi->HentKodeListe");
 
-            var localVarPath = "/api/ekstern/koder/{kodelistenavn}";
+            var localVarPath = "/api/ekstern/kodeverdier/{kodelistenavn}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);

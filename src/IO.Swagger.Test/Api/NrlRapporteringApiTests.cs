@@ -123,7 +123,7 @@ namespace IO.Swagger.Test
             }
             Console.WriteLine("FeaturesPostTest etter endring før post nytt objekt :{0}", featCollection.ToJson());
 
-            Guid eierId = GetEierId();
+            Guid? eierId = GetEierId();
 
             FeatureCollection body = featCollection;
             var response = instance.Features1(body, eierId);
@@ -204,7 +204,7 @@ namespace IO.Swagger.Test
                 feature.Geometry = point;
             }
             FeatureCollection body = featCollection;
-            Guid eierId = GetEierId();
+            Guid? eierId = GetEierId();
             var response = instance.Features1(body, eierId);
             Console.WriteLine("FeaturesAssosiasjonPostTest etter endring:{0}", response.ToJson());
 
@@ -242,7 +242,7 @@ namespace IO.Swagger.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //Lars:
-            Guid eierId = GetEierId();
+            Guid? eierId = GetEierId();
             string CRS = "4326";
             string objekttype = null;
             Guid? id = null;
@@ -265,7 +265,7 @@ namespace IO.Swagger.Test
         public FeatureCollection GetOneFeatureForEierId(string komponentId = "0d2d4b36-8037-42fa-8f98-4ffe3e864d9e", string crs = "5972")
         {
             //Lars:
-            Guid eierId = GetEierId();
+            Guid? eierId = GetEierId();
             //string CRS = "5972"; // UTM 32
             string objekttype = null;
             Guid? id = new Guid(komponentId);// null;
@@ -281,9 +281,16 @@ namespace IO.Swagger.Test
             return response;
         }
 
-        private static Guid GetEierId(string eierIdString = "1df7163c-592e-4593-818b-6f4ca6ae746d")
+        private static Guid? GetEierId(string eierIdString = "8e80fb47-0be8-40d4-82bd-45e06b0a79f6")
         {
+            // eierId is now read from appsettings.json
+            return null;
+
+            // 8e80fb47-0be8-40d4-82bd-45e06b0a79f6
+            // eierIdString = "1df7163c-592e-4593-818b-6f4ca6ae746d"
             Guid eierId = new Guid(eierIdString);
+
+            //this.Configuration.GetApiKeyWithPrefix("eierId");
             return eierId;
         }
 
